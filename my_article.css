@@ -1,0 +1,541 @@
+.title {
+
+    margin-top: 30px;
+    color: rgb(54, 26, 26);
+}
+
+/* Căn chỉnh list không bị xuống dòng */
+
+.row1_list>* {
+
+    box-sizing: border-box;
+
+}
+
+.row1_list::after {
+
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.column_codinh1 {
+    float: left;
+    width: 65%;
+    padding: 5px;
+}
+
+.colum {
+
+    /* margin-left: 40px; */
+    padding-left: 25px;
+    padding-right: 20px;
+
+}
+
+.column_codinh2 {
+    float: left;
+    width: 33%;
+    padding: 5px;
+    /* margin-left: 10px; */
+}
+
+.anh_codinh1 {
+
+    height: 410px;
+
+}
+
+.anh_codinh2 {
+
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+
+.anh_codinh3 {
+
+    height: 200px;
+
+}
+
+.column_codinh2:hover img:not(:hover) {
+
+    filter: blur(20px);
+
+}
+
+
+
+
+
+
+
+/* Css cho phần nav con của trang web */
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+        /* width: 32%; */
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+        /* width: 32%; */
+
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        /* width: 25%; */
+        width: 33%;
+
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        /* width: 50%; */
+        width: 33%;
+
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+
+
+.text {
+    color: white;
+    position: absolute;
+    top: 1080px;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+
+
+.text1 {
+    color: #fff;
+    position: absolute;
+    top: 870px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.text2 {
+    color: white;
+    position: absolute;
+    top: 1080px;
+    margin-left: 15px;
+    font-size: 20px;
+
+}
+
+
+/* Chỉnh sửa css bài viết mới  */
+
+.baivietmoi1 {
+
+    margin-left: 10px;
+    padding-right: 17px;
+    border-radius: 10px 10px 10px;
+}
+
+.baiviemoi_title {
+
+    margin-top: 10px;
+    color: rebeccapurple;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.none {
+
+    text-decoration: none;
+
+}
+
+.baiviemoi_title:hover {
+
+    color: red;
+    box-shadow: 1px 1px rebeccapurple;
+
+
+}
+
+.thongtin_tile_new {
+
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style: none;
+    font-size: 18px;
+    list-style-type: none;
+    color: black;
+
+}
+
+/* Thuộc tính của input và button */
+
+input,
+button {
+
+    border-radius: 10px 10px 10px;
+    font-weight: bold;
+
+}
+
+input,
+button:hover {
+
+    color: #0d1314;
+    background-color: #4fa8c9;
+
+}
+
+.mangxahoi {
+
+    border: 1px solid #33b5e5;
+    color: #33b5e5;
+    border-left: 10px solid rgb(116, 30, 30);
+
+}
+
+.mangxahoi_title {
+
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.mangxahoi_title:hover {
+
+    color: red;
+}
+
+.mangxahoi:hover {
+
+    background-color: #41436A;
+    color: red;
+
+}
+
+
+.row2 {
+
+    margin-left: 90px;
+
+}
+
+.row2>* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+
+}
+
+.column_codinh2_row2 {
+    float: left;
+    width: 35%;
+    /* padding: 5px; */
+}
+
+
+.anh_codinh2_row {
+
+    height: 30px;
+    /* margin-bottom: 10px; */
+
+}
+
+
+
+.hoatdongxahoi {
+
+    margin-top: 150px;
+    border: 1px solid #33b5e5;
+    color: #33b5e5;
+    border-left: 10px solid rgb(116, 30, 30);
+
+}
+
+.hoatdong_title {
+
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.hoatdong_title:hover {
+
+    color: red;
+}
+
+.hoatdongxahoi:hover {
+
+    background-color: #41436A;
+    color: red;
+
+
+}
+
+
+
+/* Chỉnh sửa video */
+video {
+
+    height: 320px;
+    width: 100% 100%;
+    border-radius: 20px 20px 20px;
+    /* width: 300px; */
+
+}
+
+.video3 {
+    border-radius: 10px 10px 10px;
+    height: 400px;
+    width: 100%;
+
+}
+
+.video4 {
+    border-radius: 10px 10px 10px;
+    /* border: 1px solid red; */
+    height: 400px;
+    /* width: 400px; */
+    width: 100%;
+
+}
+
+.video4:hover {
+
+    transform: scale(1.1);
+
+    /* transform: rotate(10deg); */
+    /* Quay 20 bên trái */
+    /* transform: skew(20deg); */
+
+    /* transform: scale(1.1); */
+
+}
+
+.til_friends {
+
+    width: 300px;
+    font-family: Brush Script MT;
+    font-size: 40px;
+
+}
+
+.til_hdxh {
+
+    margin-top: 20px;
+}
+
+.til_mangXahoi {
+
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+/* Slide showw mới */
+
+
+.row1_slideShow>* {
+    box-sizing: border-box;
+}
+
+/* Clearfix (clear floats) */
+.row1_slideShow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+.column_codinh1_1 {
+    float: left;
+    width: 65%;
+    padding: 5px;
+}
+
+.column_codinh2_2 {
+    float: left;
+    width: 35%;
+    padding: 5px;
+}
+
+#image_slide {
+
+    width: 100%;
+    height: 550px;
+
+
+}
+
+/* .anh_codinh1 {
+
+    height: 410px;
+
+} */
+
+.anh_codinh2_1 {
+
+    height: 290px;
+    margin-bottom: 10px;
+    border-radius: 0px 10px;
+}
+
+.anh_codinh3_1 {
+
+    height: 250px;
+    border-radius: 20px 20px;
+
+}
+
+.til_fo {
+
+    text-align: center;
+    /* margin-left: 100px; */
+}
+
+.anh_codinh2_1:hover {
+
+
+    /* transform: rotate(10deg); */
+    /* Quay 20 bên trái */
+    /* transform: skew(20deg); */
+
+    transform: scale(1.1);
+
+}
+
+.anh_codinh2_row:hover {
+
+    transform: scale(1.2);
+}
+
+.anh_codinh3_1:hover {
+
+    transform: scale(1.2);
+
+
+}

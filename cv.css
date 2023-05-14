@@ -1,0 +1,16 @@
+body {
+
+    padding: 0px;
+    margin: 0px auto;
+    max-width: 1200px;
+
+}
+
+/* Chỉnh pdf cv */
+
+.cv{
+
+    height: 500px;
+    width: 100%;
+
+}

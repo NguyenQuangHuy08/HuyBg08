@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" class="image_title" href="logotitle.png" type="image/x-icon">
+    <title>Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- link css định dạng trang web -->
+    <link rel="stylesheet" href="blog_css.css">
+    <!-- <link rel="stylesheet" href="dark_blog.css"> -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="navbar.js" defer></script>
+
+    <!-- <link rel="stylesheet" href="header.css"> -->
+
+</head>
+
+<body>
+
+    <!-- Xây dựng phần đầu của trang web -->
+
+    <div class="header">
+        <!-- Phần nav của tnrang web -->
+
+        <div class="row1">
+            <div class="codinh_nav">
+                <nav class="nav navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- Thanh điều hướng khi co dãn lại -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- Thanh điều hướng mở sang web ảo -->
+                            <span class=" uil uil-bars navOpenBtn"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav-links navbar-nav me-auto mb-2 mb-lg-0">
+                                <!-- Dấu đóng close -->
+                                <i class="uil uil-times navCloseBtn"></i>
+                                <!-- Dấu x -->
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-label="Facebook" rel="noreferrer" target="_blank"
+                                        href="https://www.facebook.com/profile.php?id=100032748851883"><img
+                                            class="image_nav" src="facebook.svg" alt=""></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-label="Instagram" rel="noreferrer" target="_blank"
+                                        href="https://www.instagram.com/huybg08/"><img class=" image_nav"
+                                            src="telegram.svg" alt=""></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-label="Email" rel="noreferrer" target="_blank"
+                                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkFSvdhZbCzfMfvvtRsnMFpfQHXFmVjtLScxrxRvbWkhkPcdHSxMMwkhRkrvjxQZXTwXs"><img
+                                            class="image_nav" src="envelope-fill.svg" alt=""></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-label="Github" rel="noreferrer" target="_blank"
+                                        href="https://github.com/NguyenQuangHuy08"><img class="image_nav"
+                                            src="github.svg" alt=""></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nhập môn lập trình</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- <div class="codinh_dark"> -->
+            <!-- <div id="wrapper">
+                <input type="checkbox" name="" class="switch-toggle" id="light-dark">
+            </div> -->
+            <!-- </div> -->
+        </div>
+
+
+        <!--  -->
+
+        <hr style="color: white;">
+    </div>
+
+
+
+    <section>
+        <div class="canle"></div>
+        <!-- Chạy shile show ảnh tự động -->
+
+        <div class="row">
+            <div class="class=" col-12 col-s-12"">
+                <img class="slide_show" id="img" onclick=" changeImage()" src="slide10.jpg" alt="">
+            </div>
+            <script>
+
+                var index = 1;
+                changeImage = function () {
+                    var imgs = ["slide8.jpg", "slide9.jpg", "slide10.jpg", "thenaolalaptrinhvien.jpg"];
+                    document.getElementById('img').src = imgs[index];
+                    index++;
+                    if (index == 4) {
+                        index = 0;
+                    }
+                }
+                setInterval(changeImage, 1000)
+            </script>
+        </div>
+        <br>
+        <br>
+        <p class="bantin_hover" style="font-size: 25px; font-weight: bold; margin-left: 10px;">Bản tin !</p>
+
+        <!-- 3 hình ảnh cố định không bị di chuyển khi co nhỏ lại  -->
+
+        <div class="row1">
+            <div class="column_codinh1">
+                <a href="yourself.html">
+                    <img class="anh_codinh1" src="thenaolalaptrinhvien.jpg" style="width:100%">
+                    <p class="text" style="color: white;">
+                        Lập trình viên ?
+                    </p>
+                </a>
+            </div>
+            <!-- Cảnh cố định 2 -->
+            <div class="column_codinh2">
+                <a href="yourself.html">
+                    <p class="text1" style="color: black;">
+                        Code
+                    </p>
+                    <img class="anh_codinh2" src="slide6.jpg" alt="Forest" style="width:100%">
+                </a>
+                <a href="yourself.html">
+                    <p class="text2" style="color: white;">
+                        Backend
+                    </p>
+                    <img class="anh_codinh3" src="backend.png" alt="Forest" style="width:100%">
+                </a>
+            </div>
+        </div>
+
+        <!-- Kết thúc 3 ảnh cố định không bị co -->
+
+        <div class="can3anh"></div>
+
+        <br>
+        <h3
+            style="color: black; text-align: center; font-size: 40px;font-weight: bold ; font-family: 'Courier New', Courier, monospace;">
+            Bài viết mới
+        </h3>
+        <hr>
+
+        <div class="row">
+            <div class="col-3 col-s-3 menu">
+                <a class="none" href="yourself.html">
+                    <img class="baivietmoi1" src="backend.png" alt="" width="100%">
+
+                    <p class="baiviemoi_title">
+                        Làm thế nào để trở thành một lập trình viên ?, Lộ trình học tập hiệu quả !
+                    </p>
+
+                </a>
+                <p class="thongtin_tile_new">
+
+                    Như chúng ta đã biết, công nghệ thông tin đóng vai trò chủ chốt trong sức mạnh cạnh tranh của các
+                    doanh nghiệp trên thị trường trong thời đại 4.0…
+                </p>
+                <br>
+                <!-- Phần trang tiếp theo -->
+                <a class="none" href="yourself.html">
+                    <img class="baivietmoi1" src="thenaolalaptrinhvien.jpg" alt="" width="100%">
+
+                    <p class="baiviemoi_title">
+                        Sinh viên học Công nghệ thông tin mới ra trường cần làm gì để có
+                        thể đáp ứng được yêu cầu của doanh nghiệp!
+                    </p>
+
+                </a>
+                <p class="thongtin_tile_new">
+
+                    Lập trình front-end hiện nay đang là một trong những nghề hot nhất tại Việt Nam bởi mức lương cao và
+                    được rất nhiều nhà tuyển dụng săn đón. Không…
+                </p>
+                <!-- <ul>
+                    <li>The Flight</li>
+                    <li>The City</li>
+                    <li>The Island</li>
+                    <li>The Food</li>
+                </ul> -->
+            </div>
+
+            <div class="col-6 col-s-9">
+                <!-- <h1>The City</h1>
+                <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two
+                    parts,
+                    the old town and the modern city.</p> -->
+                <a class="none" href="yourself.html">
+                    <img class="baivietmoi1" src="slide6.jpg" alt="" width="100%">
+
+                    <p class="baiviemoi_title">
+
+                        Những kiến thức, nền tảng mà một lập trình viên cần có !
+
+                    </p>
+
+                </a>
+                <p class="thongtin_tile_new">
+
+                    Lập trình viên (Develop Software) là người làm việc với các chương trình trên máy tính, bao gồm các
+                    công việc như xây dựng, thiết kế, sửa lỗi và bảo trì.
+
+                    Công việc của một lập trình viên gắn liền với các bộ mã và ngôn ngữ riêng của máy tính, có thể kể
+                    đến như Flutter, Swift hay Java, v.v...
+                </p>
+                <br>
+                <!-- Phần trang tiếp theo -->
+                <a class="none" href="yourself.html">
+                    <img class="baivietmoi1" src="slide5.jpg" alt="" width="100%">
+
+                    <p class="baiviemoi_title">
+
+                        Cách học lập trình hiệu quả không tốn thời gian.
+
+                    </p>
+
+                </a>
+                <p class="thongtin_tile_new">
+                    Để trở thành một lập trình viên chuyên nghiệp và được nhiều người tin tưởng, kỹ năng là một trong
+                    những yếu tố quan trọng vô cùng. Dưới đây một số các kỹ năng lập trình bạn cần rèn luyện hàng ngày
+                    để trở nên thuần thục...
+                </p>
+            </div>
+
+            <div class="col-3 col-s-12">
+                <div class="aside">
+                    <input type="text" spellcheck="false" placeholder="Nhập thông tin tìm kiếm!">
+                    <button>Tìm kiếm</button>
+                </div>
+                <br>
+                <h4 class="mangxahoi">
+                    <p class="mangxahoi_title">
+                        Mạng xã hội
+                    </p>
+                </h4>
+
+                <br>
+                <!-- Thông tin liên hệ của trang web -->
+                <div class="row2">
+                    <div class="column_codinh2_row2">
+                        <a aria-label="facebook" rel="noreferrer" target="_blank" class="til_mangXahoi"
+                            href="https://www.facebook.com/profile.php?id=100032748851883">
+                            <!-- <p class="text1" style="color: black;">
+                                Code
+                            </p> -->
+                            <img class="anh_codinh2_row" src="facebook.svg" alt="Forest" style="width:100%">
+                            <p class="til_mangXahoi">Facebook</p>
+                        </a>
+
+                        <a aria-label="telegranm" rel="noreferrer" target="_blank" class="til_mangXahoi"
+                            href="https://www.instagram.com/huybg08/">
+                            <!-- <p class="text2" style="color: white;">
+                            Backend
+                        </p> -->
+                            <img class="anh_codinh2_row" src="telegram.svg" alt="Forest" style="width:100%">
+                            <p class="til_mangXahoi">Telegram</p>
+                        </a>
+                    </div>
+                    <!-- Cảnh cố định 2 -->
+                    <div class="column_codinh2_row2">
+                        <a aria-label="email" rel="noreferrer" target="_blank" class="til_mangXahoi"
+                            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkFSvdhZbCzfMfvvtRsnMFpfQHXFmVjtLScxrxRvbWkhkPcdHSxMMwkhRkrvjxQZXTwXs">
+                            <!-- <p class="text1" style="color: black;">
+                            Code
+                        </p> -->
+                            <img class="anh_codinh2_row" src="envelope-fill.svg" alt="Forest" style="width:100%">
+                            <p class="til_mangXahoi">Telegram</p>
+
+                        </a>
+                        <a class="til_mangXahoi" href="https://github.com/NguyenQuangHuy08" aria-label="githut"
+                            rel="noreferrer" target="_blank">
+                            <!-- <p class="text2" style="color: white;">
+                            Backend
+                        </p> -->
+                            <img class="anh_codinh2_row" src="github.svg" alt="Forest" style="width:100%">
+                            <p class="til_mangXahoi">Git</p>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <h4 class="hoatdongxahoi">
+                    <p class="hoatdong_title">
+                        Hoạt động xã hội
+                    </p>
+                </h4>
+                <br>
+
+                <a href="https://www.facebook.com/PolyCamXuc.FM" aria-label="fpoly" rel="noreferrer" target="_blank">
+                    <img class="donate_fpoly" src="donate.png" alt="" width="100%
+                "></a>
+                <p class="tile_fpoly">
+                    Hoạt động hàng tháng ngày 13 giúp cho các bạn trường F có thể hòa nhập
+                    sôi nổi giao lưu với nhau, bên cạnh đó có thể quyên góp từ thiện, xây dựng một cộng đồng
+                    mạng mẽ tích cực,...
+                </p>
+                <br>
+                <marquee behavior="" direction="">Hãy trao đi yêu thương để nhận lại những giá trị tích cực của cuộc
+                    sống !</marquee>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <p style="color: black;">
+                Chào mừng đến với nhập môn lập trình!
+            </p>
+            <marquee>
+                @By Nguyễn Quang Huy
+            </marquee>
+        </div>
+    </section>
+
+
+    <script>
+        var checkbox_toggle = document.getElementById('light-dark');
+        checkbox_toggle.addEventListener('change', function () {
+            // THêm class dark cho body
+            document.body.classList.toggle('dark');
+        });
+    </script>
+
+    <!-- Link js của boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

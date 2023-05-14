@@ -1,0 +1,9 @@
+body{
+   
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 1200px;
+    border: 1px solid black;
+    transition: var(--transition-effect);
+
+}

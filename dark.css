@@ -1,0 +1,74 @@
+:root{
+    --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66) .3s;
+}
+body{
+
+    margin: 0px auto;
+    padding: 0px;
+    background: #749dd6;
+    transition: var(--transition-effect);
+}
+body.dark{
+    background: #41436A;
+    
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 20%;
+    padding: 5px;
+    /* Thay đổi độ  rộng */
+    /* width: 10%; */
+
+
+}
+
+/* Đây sẽ là dấu tron sáng */ 
+.switch-toggle{
+    
+    border: 1px solid black;
+    left: 10px;
+    /* left: 40px; */
+    top: 14px;
+
+    right: 30px;
+    width: 70px;
+    height: 30px; 
+    appearance: none;
+    background-image: url('moon-stars-fill.svg');
+    background-repeat: no-repeat;
+    background-size:  100% 24px;
+    border-radius: 26px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, .3);
+    transition: var(--transition-effect);
+}
+
+/* Tối  */
+.switch-toggle::before{
+
+    content: "";
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    background-image: url('cloud-sun-fill.svg');
+    background-repeat: no-repeat;
+    top: 4px;
+    left: 3px;
+    background: rgb(70, 67, 67);
+    border-radius: 50%;
+    box-shadow:inset 0px 0px 6px rgba(117, 29, 29, 0.3);
+    transition: var(--transition-effect);
+    cursor: pointer;
+
+
+}
+.switch-toggle:checked{
+    background: #749dd6;
+}
+.switch-toggle:checked:before{
+    left: 40px;
+}
